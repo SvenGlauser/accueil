@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<app-header [menu]="true" (toggleMenu)="menu.toggle()"></app-header>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #menu mode="over" opened>
+    <app-menu></app-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

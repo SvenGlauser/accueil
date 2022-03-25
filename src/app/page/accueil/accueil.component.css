@@ -1,7 +1,0 @@
-mat-sidenav-container {
-  height: calc(100vh - 66px);
-}
-
-mat-sidenav {
-  width: 15%;
-}
