@@ -6,7 +6,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { AccueilComponent } from './page/accueil/accueil.component';
 import { HeaderComponent } from './component/header/header.component';
-import { AccueilMenuComponent } from './page/accueil/accueil-menu/accueil-menu.component';
+import { MenuComponent } from './component/menu/menu.component';
 import { AccueilContentComponent } from './page/accueil/accueil-content/accueil-content.component';
 import {RouterModule, Routes} from "@angular/router";
 
@@ -51,7 +51,7 @@ const routes: Routes = [
     AppComponent,
     AccueilComponent,
     HeaderComponent,
-    AccueilMenuComponent,
+    MenuComponent,
     AccueilContentComponent
   ],
   imports: [
