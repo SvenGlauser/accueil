@@ -5,3 +5,13 @@ mat-sidenav-container {
 mat-sidenav {
   width: 15%;
 }
+
+mat-sidenav-content {
+  height: 100%;
+  width: 60%;
+
+  margin: 0 auto;
+  padding: 20px;
+
+  box-shadow: 0 0 100px 5px rgb(0 0 0 / 5%);
+}
