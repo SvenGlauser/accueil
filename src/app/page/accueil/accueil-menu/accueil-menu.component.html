@@ -1,1 +1,10 @@
-<p>accueil-menu works!</p>
+<nav>
+  <ng-container *ngFor="let menuItem of MENU">
+    <button mat-stroked-button color="primary" (click)="open(menuItem.url)">
+      <span class="button-content">
+        <h3>{{menuItem.name}}</h3>
+        <mat-icon>{{menuItem.url.startsWith("https://") || menuItem.url.startsWith("http://") ? "open_in_new" : "navigate_next"}}</mat-icon>
+      </span>
+    </button>
+  </ng-container>
+</nav>

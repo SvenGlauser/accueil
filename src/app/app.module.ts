@@ -19,6 +19,30 @@ const routes: Routes = [
   {
     path: "accueil",
     component: AccueilComponent,
+  },
+  {
+    path: "projet",
+    component: AccueilComponent,
+  },
+  {
+    path: "competences",
+    component: AccueilComponent,
+  },
+  {
+    path: "formation",
+    component: AccueilComponent,
+  },
+  {
+    path: "a-propos",
+    component: AccueilComponent,
+  },
+  {
+    path: "contact",
+    component: AccueilComponent,
+  },
+  {
+    path: "a-propos",
+    component: AccueilComponent,
   }
 ]
 
