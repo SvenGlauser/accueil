@@ -8,6 +8,19 @@ import { AccueilComponent } from './page/accueil/accueil.component';
 import { HeaderComponent } from './component/header/header.component';
 import { AccueilMenuComponent } from './page/accueil/accueil-menu/accueil-menu.component';
 import { AccueilContentComponent } from './page/accueil/accueil-content/accueil-content.component';
+import {RouterModule, Routes} from "@angular/router";
+
+const routes: Routes = [
+  {
+    path: "",
+    redirectTo: "accueil",
+    pathMatch: "full",
+  },
+  {
+    path: "accueil",
+    component: AccueilComponent,
+  }
+]
 
 @NgModule({
   declarations: [
@@ -20,7 +33,8 @@ import { AccueilContentComponent } from './page/accueil/accueil-content/accueil-
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
