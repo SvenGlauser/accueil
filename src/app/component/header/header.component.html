@@ -1,7 +1,12 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="this.toggleMenu.emit()">
+  <button *ngIf="menu; else replaceMenu"
+          mat-icon-button
+          (click)="this.toggleMenu.emit()">
     <mat-icon>menu</mat-icon>
   </button>
+  <ng-template #replaceMenu>
+    <div></div>
+  </ng-template>
 
   <span class="presentation">
     <div class="name">Sven Glauser</div>
