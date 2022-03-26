@@ -1,5 +1,5 @@
 mat-sidenav-container {
-  height: calc(100vh - 66px);
+  height: calc(100vh - var(--header-height));
 }
 
 mat-sidenav {
