@@ -2,7 +2,9 @@
 
 <h2>Mes projets</h2>
 
-<app-github-repository [repository]="repository"></app-github-repository>
+<ng-container *ngFor="let repository of this.projets">
+  <app-github-repository [repository]="repository"></app-github-repository>
+</ng-container>
 
 <h2>Compétences</h2>
 
