@@ -1,0 +1,13 @@
+.categorie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categorie h3 {
+  width: 100%;
+}
+
+.categorie .langage {
+  width: 45%;
+}

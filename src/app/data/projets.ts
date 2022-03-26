@@ -25,7 +25,7 @@ export const PROJETS: Repository[] = [
     url: "https://github.com/SvenGlauser/todo"
   },
   {
-    name: "Accueil",
+    name: "Site web de présentation",
     description: `
         <p>Développement de mon site de présentation</p>
         <p>Utilisation des technologies suivantes :</p>

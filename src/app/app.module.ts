@@ -10,6 +10,8 @@ import { MenuComponent } from './component/menu/menu.component';
 import {RouterModule, Routes} from "@angular/router";
 import { GithubRepositoryComponent } from './component/github-repository/github-repository.component';
 import { ProjetsComponent } from './page/projets/projets.component';
+import { CompetencesComponent } from './page/competences/competences.component';
+import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 
 const routes: Routes = [
   {
@@ -27,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: "competences",
-    component: AccueilComponent,
+    component: CompetencesComponent,
   },
   {
     path: "formation",
@@ -54,7 +56,9 @@ const routes: Routes = [
     HeaderComponent,
     MenuComponent,
     GithubRepositoryComponent,
-    ProjetsComponent
+    ProjetsComponent,
+    CompetencesComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

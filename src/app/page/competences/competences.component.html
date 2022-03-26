@@ -1,0 +1,17 @@
+<h1>Compétences</h1>
+
+<h2>Développement front</h2>
+<p>Bonne connaissance dans les langages de programmation du web (HTML, CSS, JavaScript, TypeScript)</p>
+
+<h2>Développement back</h2>
+<p>Bonne maitrise des langages de programmation backend principalement Java avec son framework Spring et également des connaissances dans différents autres langages de programmation</p>
+
+<h2>Langages de programmation</h2>
+
+<div class="categorie" *ngFor="let categorie of this.langagesProgrammation">
+  <h3>{{categorie.categorie}}</h3>
+  <div class="langage" *ngFor="let langage of categorie.langages">
+    <p>{{langage.name}}</p>
+    <app-progress-bar [matTooltip]="langage.time + ' ans'" [color]="categorie.color" [year]="langage.time"></app-progress-bar>
+  </div>
+</div>
