@@ -12,6 +12,7 @@ import { GithubRepositoryComponent } from './component/github-repository/github-
 import { ProjetsComponent } from './page/projets/projets.component';
 import { CompetencesComponent } from './page/competences/competences.component';
 import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
+import { EnCoursCreationComponent } from './page/en-cours-creation/en-cours-creation.component';
 
 const routes: Routes = [
   {
@@ -33,19 +34,19 @@ const routes: Routes = [
   },
   {
     path: "formation",
-    component: AccueilComponent,
+    component: EnCoursCreationComponent,
   },
   {
     path: "a-propos",
-    component: AccueilComponent,
+    component: EnCoursCreationComponent,
   },
   {
     path: "contact",
-    component: AccueilComponent,
+    component: EnCoursCreationComponent,
   },
   {
     path: "a-propos",
-    component: AccueilComponent,
+    component: EnCoursCreationComponent,
   }
 ]
 
@@ -58,7 +59,8 @@ const routes: Routes = [
     GithubRepositoryComponent,
     ProjetsComponent,
     CompetencesComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    EnCoursCreationComponent
   ],
   imports: [
     BrowserModule,
