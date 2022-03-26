@@ -6,13 +6,13 @@ import {Repository} from "../../interface/repository";
   templateUrl: './github-repository.component.html',
   styleUrls: ['./github-repository.component.css']
 })
-export class GithubRepositoryComponent implements OnInit {
+export class GithubRepositoryComponent {
 
-  @Input() repository: Repository = {technologie: [], imgAlt: "", description: "", img: "", name: ""};
+  @Input() repository: Repository = {url: "", technologie: [], imgAlt: "", description: "", img: "", name: ""};
 
   constructor() { }
 
-  ngOnInit(): void {
+  open(url: string) {
+    window.open(url);
   }
-
 }

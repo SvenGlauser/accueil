@@ -4,4 +4,5 @@ export interface Repository {
   img: string
   imgAlt: string
   technologie: string[]
+  url: string
 }

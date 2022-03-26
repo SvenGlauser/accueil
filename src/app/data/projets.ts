@@ -21,7 +21,8 @@ export const PROJETS: Repository[] = [
       "Spring JPA",
       "Liquibase",
       "PostgreSQL"
-    ]
+    ],
+    url: "https://github.com/SvenGlauser/todo"
   },
   {
     name: "Application interne",
@@ -48,7 +49,10 @@ export const PROJETS: Repository[] = [
       "Spring Security",
       "Spring JPA",
       "Liquibase",
-      "PostgreSQL"
-    ]
+      "PostgreSQL",
+      "Angular",
+      "Keycloak"
+    ],
+    url: ""
   }
 ]

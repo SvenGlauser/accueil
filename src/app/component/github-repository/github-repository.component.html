@@ -5,4 +5,7 @@
     <mat-card-subtitle>{{this.repository.technologie.join(', ')}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content [innerHTML]="this.repository.description"></mat-card-content>
+  <mat-card-actions *ngIf="this.repository.url !== ''">
+    <button mat-flat-button (click)="open(this.repository.url)">Voir le projet</button>
+  </mat-card-actions>
 </mat-card>
