@@ -25,6 +25,22 @@ export const PROJETS: Repository[] = [
     url: "https://github.com/SvenGlauser/todo"
   },
   {
+    name: "Accueil",
+    description: `
+        <p>Développement de mon site de présentation</p>
+        <p>Utilisation des technologies suivantes :</p>
+        <ul>
+          <li>Angular</li>
+        </ul>
+      `,
+    img: "assets/github/home.png",
+    imgAlt: "Icône home",
+    technologie: [
+      "Angular"
+    ],
+    url: "https://github.com/SvenGlauser/accueil"
+  },
+  {
     name: "Application interne",
     description: `
         <p>Développement d'une API pour le backend d'une application permettant le remplissage d'un formulaire</p>
