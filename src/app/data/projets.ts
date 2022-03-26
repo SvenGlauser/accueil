@@ -22,5 +22,27 @@ export const PROJETS: Repository[] = [
       "Liquibase",
       "PostgreSQL"
     ]
+  },
+  {
+    name: "Application interne",
+    description: `
+        <p>Développement d'une API pour le backend d'une application permettant le remplissage d'un formulaire</p>
+        <p>Utilisation des technologies suivantes</p>
+        <ul>
+          <li>Framework Java Spring</li>
+          <li>Base de données PostgreSQL</li>
+          <li>Liquibase pour créer la DB avec Spring</li>
+          <li>Base de donnée virtualisée avec Docker</li>
+        </ul>
+      `,
+    img: "assets/github/form.png",
+    imgAlt: "Icône formulaire",
+    technologie: [
+      "Spring Boot",
+      "Spring Security",
+      "Spring JPA",
+      "Liquibase",
+      "PostgreSQL"
+    ]
   }
 ]
