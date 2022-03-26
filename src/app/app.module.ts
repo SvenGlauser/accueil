@@ -21,7 +21,7 @@ const routes: Routes = [
     component: AccueilComponent,
   },
   {
-    path: "projet",
+    path: "projets",
     component: AccueilComponent,
   },
   {

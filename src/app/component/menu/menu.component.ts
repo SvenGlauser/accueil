@@ -14,8 +14,8 @@ export class MenuComponent {
       "url": "/accueil",
     },
     {
-      "name": "Projet",
-      "url": "/projet",
+      "name": "Projets",
+      "url": "/projets",
     },
     {
       "name": "Compétences",
