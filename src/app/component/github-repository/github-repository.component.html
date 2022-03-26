@@ -1,1 +1,8 @@
-<p>github-repository works!</p>
+<mat-card>
+  <mat-card-header>
+    <img mat-card-avatar [src]="this.repository.img" [alt]="this.repository.imgAlt">
+    <mat-card-title>{{this.repository.name}}</mat-card-title>
+    <mat-card-subtitle>{{this.repository.technologie.join(', ')}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content [innerHTML]="this.repository.description"></mat-card-content>
+</mat-card>
