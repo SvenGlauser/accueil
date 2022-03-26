@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-github-repository',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-repository.component.css']
 })
 export class GithubRepositoryComponent implements OnInit {
+
+  @Input() repository: string | undefined
 
   constructor() { }
 
