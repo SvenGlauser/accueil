@@ -9,6 +9,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { MenuComponent } from './component/menu/menu.component';
 import {RouterModule, Routes} from "@angular/router";
 import { GithubRepositoryComponent } from './component/github-repository/github-repository.component';
+import { ProjetsComponent } from './page/projets/projets.component';
 
 const routes: Routes = [
   {
@@ -52,7 +53,8 @@ const routes: Routes = [
     AccueilComponent,
     HeaderComponent,
     MenuComponent,
-    GithubRepositoryComponent
+    GithubRepositoryComponent,
+    ProjetsComponent
   ],
   imports: [
     BrowserModule,

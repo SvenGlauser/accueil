@@ -1,0 +1,6 @@
+<h1>Mes projets</h1>
+
+<ng-container *ngFor="let repository of this.projets">
+  <app-github-repository [repository]="repository"></app-github-repository>
+</ng-container>
+
