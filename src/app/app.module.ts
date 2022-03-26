@@ -23,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: "projets",
-    component: AccueilComponent,
+    component: ProjetsComponent,
   },
   {
     path: "competences",
