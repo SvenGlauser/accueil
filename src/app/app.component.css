@@ -4,6 +4,7 @@ mat-sidenav-container {
 
 mat-sidenav {
   width: 15%;
+  min-width: min-content;
 }
 
 mat-sidenav-content {
@@ -11,4 +12,14 @@ mat-sidenav-content {
 
   padding: 20px 20%;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  mat-sidenav {
+    width: 100%;
+  }
+
+  .mat-drawer {
+    transform: translate3d(0, -100%, 0);
+  }
 }
