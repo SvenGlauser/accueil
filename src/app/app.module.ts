@@ -13,6 +13,7 @@ import { ProjetsComponent } from './page/projets/projets.component';
 import { CompetencesComponent } from './page/competences/competences.component';
 import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 import { EnCoursCreationComponent } from './page/en-cours-creation/en-cours-creation.component';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: "a-propos",
     component: EnCoursCreationComponent,
+  },
+  {
+    path: "**",
+    component: PageNotFoundComponent,
   }
 ]
 
@@ -60,7 +65,8 @@ const routes: Routes = [
     ProjetsComponent,
     CompetencesComponent,
     ProgressBarComponent,
-    EnCoursCreationComponent
+    EnCoursCreationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

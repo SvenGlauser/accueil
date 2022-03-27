@@ -1,0 +1,40 @@
+.container {
+  margin: 0 -15%;
+  padding: 0;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.img {
+  width: 600px;
+  min-width: 400px;
+}
+
+img {
+  max-width: 100%;
+  mix-blend-mode: lighten;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
