@@ -19,7 +19,12 @@ mat-sidenav-content {
     width: 100%;
   }
 
+  /* Faire apparaître le menu depuis le haut */
   .mat-drawer {
     transform: translate3d(0, -100%, 0);
+  }
+
+  mat-sidenav-content {
+    padding: 20px;
   }
 }

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -7,6 +7,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+
+  @Output() clicButton = new EventEmitter();
 
   MENU = [
     {
@@ -44,6 +46,8 @@ export class MenuComponent {
       open(url);
     else
       this.router.navigate([url]).then();
+
+    this.clicButton.emit();
   }
 
   constructor(public router: Router) { }

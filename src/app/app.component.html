@@ -3,7 +3,7 @@
 <mat-sidenav-container>
 
   <mat-sidenav #menu mode="over" position="start" opened>
-    <app-menu></app-menu>
+    <app-menu (clicButton)="menu.close()"></app-menu>
   </mat-sidenav>
 
   <mat-sidenav-content>
