@@ -14,6 +14,7 @@ import { CompetencesComponent } from './page/competences/competences.component';
 import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 import { EnCoursCreationComponent } from './page/en-cours-creation/en-cours-creation.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { FormationComponent } from './page/formation/formation.component';
 
 const routes: Routes = [
   {
@@ -66,7 +67,8 @@ const routes: Routes = [
     CompetencesComponent,
     ProgressBarComponent,
     EnCoursCreationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FormationComponent
   ],
   imports: [
     BrowserModule,
