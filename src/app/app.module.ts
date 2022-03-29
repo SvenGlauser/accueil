@@ -36,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: "formation",
-    component: EnCoursCreationComponent,
+    component: FormationComponent,
   },
   {
     path: "a-propos",
