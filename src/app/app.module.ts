@@ -20,11 +20,6 @@ import { ContactComponent } from './page/contact/contact.component';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "accueil",
-    pathMatch: "full",
-  },
-  {
-    path: "accueil",
     component: AccueilComponent,
   },
   {
