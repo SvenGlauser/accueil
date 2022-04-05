@@ -36,10 +36,6 @@ const routes: Routes = [
     component: FormationComponent,
   },
   {
-    path: "a-propos",
-    component: EnCoursCreationComponent,
-  },
-  {
     path: "contact",
     component: ContactComponent,
   },
