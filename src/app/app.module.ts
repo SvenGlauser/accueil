@@ -16,6 +16,7 @@ import { EnCoursCreationComponent } from './page/en-cours-creation/en-cours-crea
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 import { FormationComponent } from './page/formation/formation.component';
 import { ContactComponent } from './page/contact/contact.component';
+import { AProposComponent } from './page/a-propos/a-propos.component';
 
 const routes: Routes = [
   {
@@ -44,7 +45,7 @@ const routes: Routes = [
   },
   {
     path: "a-propos",
-    component: EnCoursCreationComponent,
+    component: AProposComponent,
   },
   {
     path: "**",
@@ -65,7 +66,8 @@ const routes: Routes = [
     EnCoursCreationComponent,
     PageNotFoundComponent,
     FormationComponent,
-    ContactComponent
+    ContactComponent,
+    AProposComponent
   ],
   imports: [
     BrowserModule,
