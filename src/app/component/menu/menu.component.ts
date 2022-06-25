@@ -13,7 +13,7 @@ export class MenuComponent {
   MENU = [
     {
       "name": "Accueil",
-      "url": "/accueil",
+      "url": "/",
     },
     {
       "name": "Projets",

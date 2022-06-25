@@ -1,0 +1,16 @@
+.instagram img {
+  width: 24px;
+}
+
+.instagram, .mail {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 20px;
+}

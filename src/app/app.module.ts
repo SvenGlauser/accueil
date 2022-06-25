@@ -14,15 +14,13 @@ import { CompetencesComponent } from './page/competences/competences.component';
 import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 import { EnCoursCreationComponent } from './page/en-cours-creation/en-cours-creation.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { FormationComponent } from './page/formation/formation.component';
+import { ContactComponent } from './page/contact/contact.component';
+import { AProposComponent } from './page/a-propos/a-propos.component';
 
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "accueil",
-    pathMatch: "full",
-  },
-  {
-    path: "accueil",
     component: AccueilComponent,
   },
   {
@@ -35,19 +33,15 @@ const routes: Routes = [
   },
   {
     path: "formation",
-    component: EnCoursCreationComponent,
-  },
-  {
-    path: "a-propos",
-    component: EnCoursCreationComponent,
+    component: FormationComponent,
   },
   {
     path: "contact",
-    component: EnCoursCreationComponent,
+    component: ContactComponent,
   },
   {
     path: "a-propos",
-    component: EnCoursCreationComponent,
+    component: AProposComponent,
   },
   {
     path: "**",
@@ -66,7 +60,10 @@ const routes: Routes = [
     CompetencesComponent,
     ProgressBarComponent,
     EnCoursCreationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FormationComponent,
+    ContactComponent,
+    AProposComponent
   ],
   imports: [
     BrowserModule,
